@@ -4,7 +4,12 @@ spring:
     username: postgresql
     password: postgrespassword
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
       dialect: org.hibernate.dialect.PostgreSQLDialect
       ddl-auto: update
+  rabbitmq:
+    host: 10.174.0.11
+    username: guest
+    password: guest
+    port: 5672
